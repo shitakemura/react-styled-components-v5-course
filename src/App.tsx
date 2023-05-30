@@ -4,7 +4,8 @@ import styled, { ThemeProvider } from 'styled-components'
 // import { ComplexTitle } from './components/ComplexTitle'
 // import { Random } from './components/Random'
 // import { Card } from './components/Card'
-import { Loading } from './components/Loading'
+// import { Loading } from './components/Loading'
+import { DefaultButton, HipsterButton } from './components/Buttons'
 import GlobalStyles from './global-styles'
 
 const BaseTheme = {
@@ -44,8 +45,17 @@ function App() {
       {/* <AlternativeTitle title="alternative title" /> */}
       {/* <Random /> */}
       {/* <Card /> */}
-      <div style={{margin: '2rem'}}>
-        <Loading />
+      <div style={{ padding: '2rem' }}>
+        {/* <Loading /> */}
+        <HipsterButton>click me</HipsterButton>
+        <HipsterButton as="a" href="https://www.johnsmilga.com/">
+          click me
+        </HipsterButton>
+        <HipsterButton>click me</HipsterButton>
+      </div>
+      <div>
+        <DefaultButton>click me</DefaultButton>
+        <DefaultButton large>click me</DefaultButton>
       </div>
     </ThemeProvider>
   )
