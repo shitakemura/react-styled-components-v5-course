@@ -4,3 +4,4 @@
 
 - npm create vite@latest
 - npm install styled-components
+- npm install -D @types/styled-components
