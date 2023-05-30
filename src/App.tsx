@@ -6,6 +6,7 @@ import styled, { ThemeProvider } from 'styled-components'
 // import { Card } from './components/Card'
 // import { Loading } from './components/Loading'
 import { DefaultButton, HipsterButton } from './components/Buttons'
+import { Form } from './components/Form'
 import GlobalStyles from './global-styles'
 
 const BaseTheme = {
@@ -35,27 +36,30 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyles />
-      <Container>
+      {/* <Container>
         <h1>hello world</h1>
         <button className="btn" onClick={handleClick}>
           toggle me
         </button>
-      </Container>
+      </Container> */}
       {/* <ComplexTitle title="more complex title" /> */}
       {/* <AlternativeTitle title="alternative title" /> */}
       {/* <Random /> */}
       {/* <Card /> */}
-      <div style={{ padding: '2rem' }}>
-        {/* <Loading /> */}
+      {/* <div style={{ padding: '2rem' }}>
+        <Loading />
         <HipsterButton>click me</HipsterButton>
         <HipsterButton as="a" href="https://www.johnsmilga.com/">
           click me
         </HipsterButton>
         <HipsterButton>click me</HipsterButton>
-      </div>
-      <div>
+      </div> */}
+      {/* <div>
         <DefaultButton>click me</DefaultButton>
         <DefaultButton large>click me</DefaultButton>
+      </div> */}
+      <div style={{ padding: '2rem' }}>
+        <Form />
       </div>
     </ThemeProvider>
   )
