@@ -7,6 +7,8 @@ import styled, { ThemeProvider } from 'styled-components'
 // import { Loading } from './components/Loading'
 import { DefaultButton, HipsterButton } from './components/Buttons'
 import { Form } from './components/Form'
+import { List } from './components/List'
+import { Products } from './components/Products'
 import GlobalStyles from './global-styles'
 
 const BaseTheme = {
@@ -59,7 +61,9 @@ function App() {
         <DefaultButton large>click me</DefaultButton>
       </div> */}
       <div style={{ padding: '2rem' }}>
-        <Form />
+        {/* <Form /> */}
+        <List />
+        <Products />
       </div>
     </ThemeProvider>
   )

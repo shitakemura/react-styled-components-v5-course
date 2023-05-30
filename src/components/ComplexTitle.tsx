@@ -9,8 +9,8 @@ export const ComplexTitle = ({ title }: Props) => {
     <Wrapper>
       <h1>{title}</h1>
       <div className="underline"></div>
-      <div className="box"></div>
-      <h2 className="title">random</h2>
+      {/* <div className="box"></div> */}
+      {/* <h2 className="title">random</h2> */}
     </Wrapper>
   )
 }
