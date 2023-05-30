@@ -1,6 +1,7 @@
 :root {
   --primary: #645cff;
   --mainBorder: 1px solid red;
+  --white: #fff;
 }
 
 body {
@@ -10,6 +11,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #f2f4f8;
 }
 
 .title {
